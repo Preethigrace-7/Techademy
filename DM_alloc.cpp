@@ -40,10 +40,9 @@ int main(){
         *s="Techademy";
         cout<<"S contains ="<< *s <<endl;
     }
-    delete p;
+    delete p;//if not memory leakage will occur
     delete r;
     delete []w;
-    return 0;
-    delete s;//is not memory leakage will occur
+    delete s;
     return 0;
 }
